@@ -1,5 +1,9 @@
+import { Box } from "@mui/material";
+
 export default function DisplayResult() {
     return (
-        <div>DisplayResult.component</div>
+        <Box>
+            
+        </Box>
     )
 }

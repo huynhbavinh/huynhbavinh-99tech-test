@@ -1,22 +1,13 @@
 import { Autocomplete, Box, Button, TextField } from "@mui/material";
 import {
     getListCurrency
-} from '../apis/price'
+} from '../apis/price';
 import { useEffect, useState } from "react";
 import { Currency } from "../types/currency.type";
 import { removeDuplicateValue } from "../utils";
 import './From.component.css'
 import { NumericFormat } from 'react-number-format';
-import InputAdornment from '@mui/material/InputAdornment'
-
-function CustomTextField(errFromValue: boolean) {
-    return (
-        <TextField sx={{ display: 'inline-block' }} id="value-to" label="Value" variant="filled"
-            error={errFromValue}
-            helperText={errFromValue ? 'Invalid Input Number' : ''}
-        />
-    )
-}
+import InputAdornment from '@mui/material/InputAdornment';
 
 export default function FormComponent() {
     const [listCurrency, setListCurrency] = useState<Array<Currency>>([]);
