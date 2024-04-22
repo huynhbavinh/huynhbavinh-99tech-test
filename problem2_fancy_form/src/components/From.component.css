@@ -1,0 +1,6 @@
+.input-control{
+    padding: 1rem 0rem;
+}
+.disableText:disabled {
+    color: black;
+}
